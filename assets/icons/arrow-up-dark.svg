@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 79.77 117.05">
+  <defs>
+    <style>
+      .k {
+        fill: #2a2a2a;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="Ebene 1">
+    <g id="d" data-name="design">
+      <g id="e" data-name="start-V1.1">
+        <g id="f" data-name="Kundenstimme-Slider">
+          <g id="g" data-name="Button/Square-Icon">
+            <g id="h" data-name="icons/arrow-down/black">
+              <g id="i" data-name="Path-2">
+                <path class="k" d="m35.45,112.62V6.27c0-2.45,1.98-4.43,4.43-4.43s4.43,1.98,4.43,4.43v106.36c0,2.45-1.98,4.43-4.43,4.43s-4.43-1.98-4.43-4.43Z"/>
+              </g>
+              <g id="j" data-name="Path-3">
+                <path class="k" d="m0,41.72c0-1.13.43-2.27,1.3-3.13L39.88,0l38.58,38.58c1.73,1.73,1.73,4.54,0,6.27s-4.54,1.73-6.27,0L39.88,12.53,7.56,44.85c-1.73,1.73-4.54,1.73-6.27,0-.87-.87-1.3-2-1.3-3.13Z"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

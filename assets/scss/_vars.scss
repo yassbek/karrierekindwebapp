@@ -1,0 +1,129 @@
+$primary: #209DCB;
+$primaryLight: #E1EEF2;
+$secondary: #FF8300;
+$secondaryLight: #F9E0C6;
+$dark: #2A2A2A;
+$light: #F8F8F8;
+$success: #8CCB20;
+$error: #CB3420;
+$warning: $secondary;
+
+$paddingLarge: 130px;
+$paddingBig: 80px;
+$paddingMedium: 60px;
+$paddingSmall: 30px;
+
+$maxWidth: 1600px;
+$maxWidthMedium: 960px;
+$maxWidthSmall: 640px;
+
+$borderRadius: 0px;
+
+$companySlug: 'iwq';
+
+@mixin shadow($y: 10px, $blur: 30px, $opacity: .2) {
+  box-shadow: 0 $y $blur rgba(0,0,0, $opacity) !important;
+}
+
+@mixin font {
+  font-family: 'Open Sans' !important;
+}
+
+@mixin box($x, $y: $x) {
+  width: $x;
+  height: $y;
+}
+
+@mixin padding($size: 'big') {
+
+  @if $size == 'big' {
+    padding: $paddingBig;
+
+  } @else if $size == 'medium' {
+    padding: $paddingMedium;
+
+  } @else if $size == 'small' {
+    padding: $paddingMedium $paddingSmall;
+
+  }
+}
+
+@mixin flexMe($x: center, $y: $x, $wrap: wrap) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+  flex-wrap: $wrap;
+}
+
+@mixin bg($url, $fit: contain, $pos: center) {
+    @if $url {
+        background-image: url('#{$url}');
+    }
+  background-position: $pos;
+  background-size: $fit;
+  background-repeat: no-repeat;
+}
+
+@mixin pos($x, $y: $x, $mode: tl, $pos: absolute) {
+  position: $pos;
+  @if $mode == tl {
+    top: $x;
+    left: $y;
+    bottom: auto;
+    right: auto;
+  } @else if $mode == tr {
+    top: $x;
+    right: $y;
+    bottom: auto;
+    left: auto;
+  } @else if $mode == bl {
+    bottom: $x;
+    left: $y;
+    top: auto;
+    right: auto;
+  } @else if $mode == br {
+    bottom: $x;
+    right: $y;
+    top: auto;
+    left: auto;
+  }
+}
+
+@mixin colorize($color, $background: true, $textColor: false, $amount: 10%) {
+
+  @if $background {
+    background-color: $color;
+  }
+  @if $textColor {
+    color: $color;
+  }
+
+  &:hover {
+    @if $background {
+      background-color: lighten($color, $amount);
+    }
+
+    @if $textColor {
+      color: lighten($color, $amount);
+    }
+  }
+
+  &:active {
+    @if $background {
+      background-color: darken($color, $amount);
+    }
+
+    @if $textColor {
+      color: darken($color, $amount);
+    }
+  }
+
+}
+
+@mixin trans($duration: .35s, $property: false, $easing: ease) {
+    transition: $duration $easing;
+
+    @if $property {
+        transition-property: $property;
+    }
+}

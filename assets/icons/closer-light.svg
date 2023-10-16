@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.59 93.59">
+  <defs>
+    <style>
+      .k {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="Ebene 1">
+    <g id="d" data-name="design">
+      <g id="e" data-name="fuer-anpacker">
+        <g id="f" data-name="Group-22">
+          <g id="g" data-name="Group-8">
+            <g id="h" data-name="Group-7">
+              <rect id="i" data-name="Rectangle" class="k" x="-11.6" y="39.01" width="116.79" height="15.57" transform="translate(-19.38 46.8) rotate(-45)"/>
+              <rect id="j" data-name="Rectangle" class="k" x="39.01" y="-11.6" width="15.57" height="116.79" transform="translate(-19.38 46.8) rotate(-45)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
